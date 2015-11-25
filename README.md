@@ -1,5 +1,6 @@
 # minimal-grid-square-partition
 An algorithm that separates a set of 2D points with integer coordinates and returns a partition of this set composed only with rectangles.
+Big thanks to [devspaceship](https://github.com/devspaceship "devspaceship")'s idea for an iterative implementation of this algorithm.
 
 ##Python
 
@@ -8,12 +9,12 @@ To use, add mgsp.py to your project, and just type at the beggining of your scri
 import mgsp
 ```
 
-###mgsp.separative(M, m0):
+###mgsp.separate(M, m0):
 - M : the set of points to separate
 - m0 : a point where the algorithm will start its course
 
 This function separates a set of point into rectangles. Given a rectangle is
-represented by the cartesian product [|a;b|]*[|c;d|], then the method returns
+represented by the cartesian product [|a;b|]x[|c;d|], then the method returns
 a set of tuples formatted as ((a, b), (c, d)).
 
 ####mgsp.get_rect(M, m0):
@@ -21,7 +22,7 @@ a set of tuples formatted as ((a, b), (c, d)).
 - m : the point
 
 This function returns a tuple ((a,b), (c,d)) which represents the rectangle
-[|a;b|]*[|c;d|]. This rectangle is a rectangle that is included in M and
+[|a;b|]x[|c;d|]. This rectangle is a rectangle that is included in M and
 contains m.
 
 ####mgsp.get_width_interval(M, m):

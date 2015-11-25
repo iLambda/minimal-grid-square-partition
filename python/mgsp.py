@@ -5,7 +5,7 @@ a space partition only made of rectangles. This algorithm can be used to
 separate complicated shapes into a bunch of rectangles."""
 
 
-"""separative(M, m0):
+"""separate(M, m0):
         * M : the set of points to separate
         * m0 : a point where the algorithm will start its course
 
